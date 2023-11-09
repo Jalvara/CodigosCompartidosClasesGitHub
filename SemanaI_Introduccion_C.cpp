@@ -1,12 +1,21 @@
 #include <iostream>
-
+#include <cmath>
+#include <iomanip>
 using namespace std;
 
 int main(){
     //Buscar el mayor de tres numeros.
+    float f1=2378911134;
+    double f2=2378911134;
+    cout<<setprecision(10)<<"Float: "<<f1<<endl;
+    cout<<setprecision(10)<<"Double: "<<f2<<endl;
     int x=26;//Inicializar una variable.
     int y,z;
-    y=23;z=67;
+    y=23;
+    cin>>z;//Se hara la lectura de la variable z
+    cout<<"El logaritmo en base e de 3: "<<log(3)<<endl;
+    cout<<"El coseno de 10 es: "<<cos(10)<<endl;
+    cout<<"El mayor entero de 12.23: "<<floor(12.23)<<endl;
     //Ejemplo bloque de decision
     /*if(x>0){
         cout<<"La variable x contiene un numero positivo.";
