@@ -20,7 +20,7 @@ int main(){
         if(dato%2==0){
             acum+=1;
         }
-    }
+    }  
     cout<<"La salida del programa es: "<<acum<<endl;
     return 0;
 }
