@@ -6,9 +6,10 @@ void f(int *c);
 void g(int X[]);
 int main(){
     int x=10;
+    int y=191;
     //Con & podemos recuperar la direccion de memoria
     cout<<"La direccion de la variable x: "<<&x<<endl; 
-    int *px;
+    int * px;
     px=&x;//Asignando la direccion de memoria
     cout<<"El contenido de la varible px: "<<px<<endl;
     //Proceso de desreferenciaciion
@@ -16,6 +17,9 @@ int main(){
     cout<<"Contenido de la varible x: "<<*px<<endl;
     f(x);
     f(&x);
+    px=&y;//cambiando la direccion del puntero px.
+    const int *py=&y;
+    cout<<"Contenido de y a trave de py: "<<*py<<endl;
     int A[5];
     A[0]=10;
     cout<<"Imprimiendo el valor de A: "<<A<<endl;
